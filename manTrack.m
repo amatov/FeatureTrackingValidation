@@ -22,7 +22,7 @@ function varargout = manTrack(varargin)
 
 % Edit the above text to modify the response to help manTrack
 
-% Last Modified by GUIDE v2.5 11-Mar-2004 16:06:44
+% Alexandre Matov v2.5 11-Mar-2004 16:06:44
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
