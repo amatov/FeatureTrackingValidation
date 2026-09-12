@@ -103,6 +103,7 @@ end
 if isunix == 1
     string = '/unc/manTrackWT2s/results/sp.mat';
 else
+    % EDIT: hardcoded absolute path to the original author's machine
     string = 'U:\manTrackWT2s\results\sp.mat';
 end
 if (rand(1)<2) & (exist(string)~=0)  
@@ -110,6 +111,7 @@ if (rand(1)<2) & (exist(string)~=0)
     if isunix == 1
         cd('/unc/manTrackWT2s/results');
     else
+        % EDIT: hardcoded absolute path to the original author's machine
         cd('U:\manTrackWT2s\results');
     end 
     load sp   
@@ -148,6 +150,7 @@ if isunix == 1
     load(['/unc/manTrackWT2s/speckles/cands0',num2str(startCands)])
 else
 %     load(['U:\manTrackWT2s\speckles\cands0',num2str(startCands)])
+    % EDIT: hardcoded absolute path to the original author's machine
     load(['X:\AlexData\Torsten\111607_EB1andMTs\111607_#20\EB1\feats0',num2str(startCands)])
 end
 cands=cands(find([cands.status]==1));
@@ -156,6 +159,7 @@ handles.cands=cands;
 if isunix == 1
     dirNameIm = '/unc/manTrackWT2s/images';
 else
+    % EDIT: hardcoded absolute path to the original author's machine
     dirNameIm = 'U:\manTrackWT2s\images';
 end
 fileNameIm='crop_MetaSpindleWT2s0';
@@ -251,6 +255,7 @@ currpath = pwd;
 if isunix == 1
     cd('/unc/manTrackWT2s/results');
 else
+    % EDIT: hardcoded absolute path to the original author's machine
     cd('U:\manTrackWT2s\results');
 end
 if exist('sp.mat')~=0
@@ -282,6 +287,7 @@ eval(strcat('save sp.mat sp;')); % Save speckle info
 if isunix == 1
     cd('/unc/manTrackWT2s/speckles');
 else
+    % EDIT: hardcoded absolute path to the original author's machine
     cd('U:\manTrackWT2s\speckles');
 end
 if length(sp(indx).frame)>1
@@ -292,6 +298,7 @@ if length(sp(indx).frame)>1
         if isunix == 1
             load(['/unc/manTrackWT2s/speckles/cands0',num2str(sp(indx).frame(i)+50)])
         else
+            % EDIT: hardcoded absolute path to the original author's machine
             load(['U:\manTrackWT2s\speckles\cands0',num2str(sp(indx).frame(i)+50)])
         end
         cands=cands(find([cands.status]==1));
@@ -300,6 +307,7 @@ if length(sp(indx).frame)>1
         if isunix == 1
             load(['/unc/manTrackWT2s/speckles/cands0',num2str(sp(indx).frame(i+1)+50)])
         else
+            % EDIT: hardcoded absolute path to the original author's machine
             load(['U:\manTrackWT2s\speckles\cands0',num2str(sp(indx).frame(i+1)+50)])
         end
         cands=cands(find([cands.status]==1));

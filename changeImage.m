@@ -57,6 +57,7 @@ haSp=plot(handles.candsR.Lmax(2), handles.candsR.Lmax(1), 'r*');%initial speckle
 if isunix == 1
     temp_cands_fname = strcat('/unc/manTrackWT2s/speckles/cands0', num2str(handles.no+50), '.mat');
 else
+    % EDIT: hardcoded absolute path to the original author's machine
     temp_cands_fname = strcat('U:\manTrackWT2s\speckles\cands0', num2str(handles.no+50), '.mat');
 end
 load(temp_cands_fname); % Load in the new cand structure.
