@@ -1,4 +1,4 @@
-## FeatureTrackingValidation
+## Feature Tracking Validation
 
 Matlab code I wrote to allow users to perform manual feature tracking.
 
