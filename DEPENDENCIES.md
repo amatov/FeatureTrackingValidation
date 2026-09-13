@@ -1,11 +1,11 @@
 # Dependencies
 
-No specific MATLAB version is recorded. `manTrack.m` uses `imshow`,
-which requires MATLAB's **Image Processing Toolbox**.
+No specific Matlab version is recorded. `manTrack.m` uses `imshow`,
+which requires Matlab's **Image Processing Toolbox**.
 
 `manTrack.fig` is a GUIDE layout file and must be kept in the same
 folder as `manTrack.m` -- launch the GUI by running `manTrack` from
-MATLAB.
+Matlab.
 
 ## Missing function
 
